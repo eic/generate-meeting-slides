@@ -70,7 +70,7 @@ runs:
       with:
         root_file: |
           ${{ steps.mtng.outputs.dir }}/${{ steps.mtng.outputs.file }}.tex
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       with:
         name: ${{ steps.mtng.outputs.file }}
         path: ${{ steps.mtng.outputs.file }}.pdf
